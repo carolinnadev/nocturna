@@ -20,3 +20,24 @@ El proyecto Rueda Nocturna requiere una identidad visual propia con tonos oscuro
 **Cómo lo mitigo:**  
 - Mantengo un kit de componentes unificado en `componentes.html`.
 - Utilizo la directiva `@theme` en CSS para centralizar las variables del diseño y mantener la consistencia cromática.
+
+# Rueda Nocturna — Landing Page y Ecosistema
+
+Sitio modular responsive enfocado en recorridos nocturnos guiados en bicicleta por la ciudad de Medellín.
+
+**Sitio publicado en GitHub Pages:** [https://tu-usuario.github.io/tu-repositorio/](https://tu-usuario.github.io/tu-repositorio/)
+
+## Páginas y Secciones
+- `index.html` (Landing Rueda Nocturna): Hero, rutas interactivas, sección de pasos, planes comerciales y formulario de inscripción validado.
+- Sitio principal (v2.0 en Bootstrap): Integrado con navegación cruzada y coherencia visual de marca.
+
+## Tecnologías Utilizadas
+- HTML5 semántico
+- Tailwind CSS v4 (con Tailwind CLI y compilación minificada `--minify`)
+- Git y GitHub / GitHub Pages
+
+## Framework Elegido y Justificación
+Se seleccionó **Tailwind CSS** por la necesidad de construir una identidad visual única con colores oscuros y alta visibilidad nocturna (`#FFD166`), logrando un rendimiento superior y un archivo CSS final muy ligero (~11 KB) en comparación con frameworks pesados basados en componentes genéricos.
+
+## Autor
+Caro — Coder de Riwi (2026)

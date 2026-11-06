@@ -178,6 +178,180 @@
         </div>
         </section>
 
+        <!-- SECCIÓN DE PLANES RUEDA NOCTURNA -->
+        <section id="planes" class="mx-auto max-w-6xl px-4 sm:px-6 py-16 space-y-12">
+        <div class="text-center space-y-3">
+            <h2 class="text-3xl font-bold tracking-tight text-white">Planes Rueda Nocturna</h2>
+            <p class="text-sm sm:text-base text-gray-400 max-w-md mx-auto">Selecciona la modalidad perfecta para vivir tu experiencia nocturna.</p>
+        </div>
+
+        <!-- GRILLA DE 3 PLANES (1 col en móvil, 3 en lg) -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch">
+            
+            <!-- PLAN 1: INDIVIDUAL -->
+            <article class="flex flex-col justify-between rounded-2xl border border-gray-800 bg-gray-900 p-8 shadow-xl transition-all">
+            <div class="space-y-6">
+                <div>
+                <span class="text-xs font-bold uppercase tracking-wider text-gray-400">Estándar</span>
+                <h3 class="text-2xl font-bold text-white mt-1">Individual</h3>
+                </div>
+                <div class="text-3xl font-extrabold text-amber-400">
+                $55.000 <span class="text-xs font-normal text-gray-400">/ persona</span>
+                </div>
+                <ul class="space-y-3 text-sm text-gray-300">
+                <li class="flex items-center gap-2">✓ Bicicleta y casco incluidos</li>
+                <li class="flex items-center gap-2">✓ Luces LED y chaleco reflectivo</li>
+                <li class="flex items-center gap-2">✓ Guía certificado de ruta</li>
+                <li class="flex items-center gap-2">✓ Kit de hidratación</li>
+                </ul>
+            </div>
+            <div class="pt-8">
+                <a href="#inscripcion" class="btn-nocturna-secondary w-full block text-center py-2.5">Elegir Individual</a>
+            </div>
+            </article>
+
+            <!-- PLAN 2: PAREJA (DESTACADO) -->
+            <article class="relative flex flex-col justify-between rounded-2xl border-2 border-amber-400 bg-gray-900 p-8 shadow-2xl shadow-amber-500/10 scale-105 z-10">
+            <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-amber-400 text-gray-950 font-bold text-xs uppercase px-3 py-1 rounded-full shadow-md">
+                Más elegido
+            </div>
+            <div class="space-y-6">
+                <div>
+                <span class="text-xs font-bold uppercase tracking-wider text-amber-400">Dúo</span>
+                <h3 class="text-2xl font-bold text-white mt-1">Pareja</h3>
+                </div>
+                <div class="text-3xl font-extrabold text-amber-400">
+                $99.000 <span class="text-xs font-normal text-gray-400">/ dos personas</span>
+                </div>
+                <ul class="space-y-3 text-sm text-gray-300">
+                <li class="flex items-center gap-2">✓ Todo lo del plan Individual</li>
+                <li class="flex items-center gap-2">✓ Foto profesional del recorrido</li>
+                <li class="flex items-center gap-2">✓ Snack especial para dos</li>
+                <li class="flex items-center gap-2">✓ Prioridad en la formación de salida</li>
+                </ul>
+            </div>
+            <div class="pt-8">
+                <a href="#inscripcion" class="btn-nocturna-primary w-full block text-center py-2.5">Elegir Pareja</a>
+            </div>
+            </article>
+
+            <!-- PLAN 3: GRUPO -->
+            <article class="flex flex-col justify-between rounded-2xl border border-gray-800 bg-gray-900 p-8 shadow-xl transition-all">
+            <div class="space-y-6">
+                <div>
+                <span class="text-xs font-bold uppercase tracking-wider text-gray-400">Equipo</span>
+                <h3 class="text-2xl font-bold text-white mt-1">Grupo (4 a 8)</h3>
+                </div>
+                <div class="text-3xl font-extrabold text-amber-400">
+                $45.000 <span class="text-xs font-normal text-gray-400">/ persona</span>
+                </div>
+                <ul class="space-y-3 text-sm text-gray-300">
+                <li class="flex items-center gap-2">✓ Todo lo del plan Individual</li>
+                <li class="flex items-center gap-2">✓ Guía exclusivo para el grupo</li>
+                <li class="flex items-center gap-2">✓ Horario y ruta a elección</li>
+                <li class="flex items-center gap-2">✓ Paquete de fotos grupales</li>
+                </ul>
+            </div>
+            <div class="pt-8">
+                <a href="#inscripcion" class="btn-nocturna-secondary w-full block text-center py-2.5">Elegir Grupo</a>
+            </div>
+            </article>
+
+        </div>
+        </section>
+
+        <!-- SECCIÓN DE INSCRIPCIÓN Y REGISTRO -->
+        <section id="inscripcion" class="mx-auto max-w-4xl px-4 sm:px-6 py-16">
+        <div class="bg-gray-900 p-8 sm:p-12 rounded-2xl border border-gray-800 shadow-2xl space-y-8">
+            <div class="text-center space-y-2">
+            <h2 class="text-2xl sm:text-3xl font-bold text-white">Inscripción a Rueda Nocturna</h2>
+            <p class="text-sm text-gray-400">Completa todos los datos obligatorios para asegurar tu cupo en el próximo recorrido.</p>
+            </div>
+
+            <form class="space-y-6">
+            
+            <!-- GRUPO 1: DATOS PERSONALES -->
+            <fieldset class="space-y-4 border border-gray-800 p-4 sm:p-6 rounded-xl">
+                <legend class="px-2 text-sm font-semibold text-amber-400">1. Datos Personales</legend>
+                
+                <div class="space-y-1">
+                <label for="nombre" class="block text-sm font-medium text-gray-300">Nombre completo</label>
+                <input type="text" id="nombre" name="nombre" required minlength="3" placeholder="Tu nombre y apellido"
+                    class="w-full rounded-lg border border-gray-700 bg-gray-950 px-3 py-2 text-white placeholder-gray-500 focus:border-amber-400 focus:ring-2 focus:ring-amber-400/50 focus:outline-hidden">
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div class="space-y-1">
+                    <label for="correo" class="block text-sm font-medium text-gray-300">Correo electrónico</label>
+                    <input type="email" id="correo" name="correo" required placeholder="tu@correo.com"
+                    class="w-full rounded-lg border border-gray-700 bg-gray-950 px-3 py-2 text-white placeholder-gray-500 focus:border-amber-400 focus:ring-2 focus:ring-amber-400/50 focus:outline-hidden">
+                </div>
+
+                <div class="space-y-1">
+                    <label for="celular" class="block text-sm font-medium text-gray-300">Celular (10 dígitos, empieza por 3)</label>
+                    <input type="tel" id="celular" name="celular" required pattern="^3[0-9]{9}$" title="Debe empezar por 3 y tener exactamente 10 dígitos" placeholder="3001234567"
+                    class="w-full rounded-lg border border-gray-700 bg-gray-950 px-3 py-2 text-white placeholder-gray-500 focus:border-amber-400 focus:ring-2 focus:ring-amber-400/50 focus:outline-hidden">
+                </div>
+                </div>
+            </fieldset>
+
+            <!-- GRUPO 2: DETALLES DEL RECORRIDO -->
+            <fieldset class="space-y-4 border border-gray-800 p-4 sm:p-6 rounded-xl">
+                <legend class="px-2 text-sm font-semibold text-amber-400">2. Selección de Experiencia</legend>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div class="space-y-1">
+                    <label for="ruta" class="block text-sm font-medium text-gray-300">Ruta seleccionada</label>
+                    <select id="ruta" name="ruta" required
+                    class="w-full rounded-lg border border-gray-700 bg-gray-950 px-3 py-2 text-white focus:border-amber-400 focus:ring-2 focus:ring-amber-400/50 focus:outline-hidden">
+                    <option value="">Selecciona una ruta...</option>
+                    <option value="centro">Luces del Centro ($55.000)</option>
+                    <option value="miradores">Miradores Urbanos ($75.000)</option>
+                    <option value="palmas">Luna en Las Palmas ($95.000)</option>
+                    </select>
+                </div>
+
+                <div class="space-y-1">
+                    <label for="dia" class="block text-sm font-medium text-gray-300">Día de salida</label>
+                    <select id="dia" name="dia" required
+                    class="w-full rounded-lg border border-gray-700 bg-gray-950 px-3 py-2 text-white focus:border-amber-400 focus:ring-2 focus:ring-amber-400/50 focus:outline-hidden">
+                    <option value="">Selecciona el día...</option>
+                    <option value="jueves">Jueves</option>
+                    <option value="viernes">Viernes</option>
+                    <option value="sabado">Sábado</option>
+                    </select>
+                </div>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div class="space-y-1">
+                    <label for="acompanantes" class="block text-sm font-medium text-gray-300">Número de acompañantes (0 a 3)</label>
+                    <input type="number" id="acompanantes" name="acompanantes" min="0" max="3" value="0" required
+                    class="w-full rounded-lg border border-gray-700 bg-gray-950 px-3 py-2 text-white focus:border-amber-400 focus:ring-2 focus:ring-amber-400/50 focus:outline-hidden">
+                </div>
+
+                <div class="space-y-1">
+                    <label for="experiencia" class="block text-sm font-medium text-gray-300">Nivel de experiencia</label>
+                    <select id="experiencia" name="experiencia" required
+                    class="w-full rounded-lg border border-gray-700 bg-gray-950 px-3 py-2 text-white focus:border-amber-400 focus:ring-2 focus:ring-amber-400/50 focus:outline-hidden">
+                    <option value="principiante">Principiante</option>
+                    <option value="intermedio">Intermedio</option>
+                    <option value="avanzado">Avanzado</option>
+                    </select>
+                </div>
+                </div>
+
+                <div class="flex items-center gap-3 pt-2">
+                <input type="checkbox" id="bici_propia" name="bici_propia" class="w-4 h-4 rounded border-gray-700 bg-gray-950 text-amber-500 focus:ring-amber-400">
+                <label for="bici_propia" class="text-sm text-gray-300">¿Cuentas con bicicleta propia y equipo de luces?</label>
+                </div>
+            </fieldset>
+
+            <button type="submit" class="btn-nocturna-primary w-full py-3">Confirmar y Enviar Inscripción</button>
+            </form>
+        </div>
+        </section>
+
     </main>
 
     <!-- PIE DE PÁGINA -->
