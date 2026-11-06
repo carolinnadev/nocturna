@@ -1,1 +1,12 @@
 @import "tailwindcss";
+
+/* Definición de variante personalizada para modo oscuro manual */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Tema personalizado con la directiva @theme de Tailwind v4 */
+@theme {
+  --color-nocturna-bg: #090d16;
+  --color-nocturna-card: #111827;
+  --color-nocturna-brand: #f59e0b;
+  --color-nocturna-hover: #d97706;
+};

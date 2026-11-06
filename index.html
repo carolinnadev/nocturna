@@ -1,133 +1,97 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="dark">
     <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rueda Nocturna · Recorridos en Bici</title>
-    <!-- Enlace al CSS generado por Tailwind CLI -->
     <link href="./src/output.css" rel="stylesheet">
     </head>
-    <body class="bg-gray-950 text-gray-100 min-h-screen font-sans antialiased">
+    <body class="bg-gray-50 text-gray-900 dark:bg-gray-950 dark:text-gray-100 min-h-screen font-sans transition-colors duration-300">
+
+    <!-- BARRA DE NAVEGACIÓN -->
+    <nav class="border-b border-gray-200 dark:border-gray-800 bg-white/80 dark:bg-gray-900/80 backdrop-blur-md sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+        <span class="text-xl font-bold tracking-tight text-amber-600 dark:text-amber-400">Rueda Nocturna</span>
+        <div class="flex items-center gap-6 text-sm font-medium">
+            <a href="#rutas" class="hover:text-amber-500 transition-colors">Rutas</a>
+            <a href="#contacto" class="hover:text-amber-500 transition-colors">Contacto</a>
+        </div>
+        </div>
+    </nav>
 
     <!-- SECCIÓN PRINCIPAL (HERO) -->
-    <header class="relative overflow-hidden border-b border-gray-800 bg-gray-900/50 py-20 px-6 text-center">
+    <header class="border-b border-gray-200 dark:border-gray-800 bg-amber-500/5 dark:bg-gray-900/50 py-16 px-6 text-center">
         <div class="max-w-3xl mx-auto space-y-6">
-        
-        <!-- Etiqueta de campaña -->
-        <span class="inline-block px-3 py-1 bg-amber-500/10 text-amber-400 text-xs font-semibold tracking-wider uppercase rounded-full border border-amber-500/20">
-            Nuevo · Jueves a sábado
+        <span class="inline-block px-3 py-1 bg-amber-500/10 text-amber-600 dark:text-amber-400 text-xs font-semibold tracking-wider uppercase rounded-full border border-amber-500/20">
+            Recorridos Guiados · Medellín
         </span>
-
-        <!-- Título principal único -->
-        <h1 class="text-4xl sm:text-6xl font-extrabold text-white tracking-tight leading-tight">
+        <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-gray-900 dark:text-white">
             Rueda Nocturna
         </h1>
-
-        <!-- Subtítulo -->
-        <p class="text-lg sm:text-xl text-gray-300 max-w-xl mx-auto">
+        <p class="text-lg sm:text-xl text-gray-600 dark:text-gray-300 max-w-xl mx-auto">
             Descubre Medellín en bici cuando se encienden las luces
         </p>
-
-        <!-- Datos destacados -->
-        <div class="flex justify-center items-center gap-8 py-4">
-            <div>
-            <p class="text-2xl font-bold text-amber-400">3 rutas</p>
-            <p class="text-xs text-gray-400 uppercase tracking-wider">Disponibles</p>
-            </div>
-            <div class="h-8 w-px bg-gray-800"></div>
-            <div>
-            <p class="text-2xl font-bold text-amber-400">Desde $55.000</p>
-            <p class="text-xs text-gray-400 uppercase tracking-wider">Por persona</p>
-            </div>
-        </div>
-
-        <!-- Botón Principal del Kit -->
-        <div>
-            <a href="#rutas" 
-            class="inline-block rounded-lg bg-amber-600 px-6 py-3 font-semibold text-white shadow-md hover:bg-amber-700 focus:ring-4 focus:ring-amber-400/50 focus:outline-hidden transition-all duration-200">
-            Inscríbete ahora
-            </a>
-        </div>
-
         </div>
     </header>
 
-    <!-- SECCIÓN DE RUTAS Y CARDS -->
-    <main id="rutas" class="max-w-6xl mx-auto px-6 py-16 space-y-12">
+    <!-- SECCIÓN DE RUTAS (LAYOUT RESPONSIVE) -->
+    <main id="rutas" class="max-w-6xl mx-auto px-6 py-12 space-y-8">
         
-        <div class="text-center space-y-3">
-        <h2 class="text-3xl font-bold tracking-tight text-white">Nuestras Rutas Nocturnas</h2>
-        <p class="text-gray-400 max-w-md mx-auto">Todas las salidas incluyen bicicleta, casco, luces LED, chaleco reflectivo y guía especializado.</p>
+        <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 border-b border-gray-200 dark:border-gray-800 pb-4">
+        <div>
+            <h2 class="text-2xl sm:text-3xl font-bold tracking-tight">Nuestras Rutas</h2>
+            <p class="text-sm text-gray-500 dark:text-gray-400">Elige la experiencia según tu nivel de preparación</p>
+        </div>
+        <a href="#todas" class="text-sm font-semibold text-amber-600 dark:text-amber-400 hover:underline">Ver todas las fechas &rarr;</a>
         </div>
 
-        <!-- Cuadrícula de Cards -->
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- GRILLA RESPONSIVE: 1 COLUMNA EN MÓVIL, 2 EN SM, 3 EN LG -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
 
-        <!-- CARD 1: Luces del Centro -->
-        <article class="group relative flex flex-col overflow-hidden rounded-xl border border-gray-800 bg-gray-900 shadow-xl transition-all duration-300 hover:-translate-y-1 hover:border-amber-500/50 hover:shadow-amber-500/10">
-            <div class="h-48 w-full bg-gray-800 relative overflow-hidden flex items-center justify-center">
-            <span class="text-gray-500 text-sm">Imagen Ruta Centro</span>
+        <!-- CARD 1 -->
+        <article class="flex flex-col overflow-hidden rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 shadow-sm hover:shadow-md transition-all">
+            <div class="h-44 w-full bg-amber-900/20 dark:bg-gray-800 flex items-center justify-center p-6">
+            <svg class="w-12 h-12 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
             </div>
-            <div class="flex flex-col flex-grow p-6 space-y-4">
-            <div class="flex justify-between items-center">
-                <span class="px-2.5 py-1 text-xs font-bold uppercase tracking-wider rounded-md bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
-                Fácil
-                </span>
-                <span class="text-sm font-medium text-gray-400">10 km · 2 h</span>
-            </div>
-            <h3 class="text-xl font-bold text-white group-hover:text-amber-400 transition-colors">Luces del Centro</h3>
-            <p class="text-sm text-gray-400 flex-grow">Recorrido urbano iluminado por los monumentos históricos de la ciudad.</p>
-            <div class="pt-4 border-t border-gray-800 flex items-center justify-between">
-                <span class="text-xl font-bold text-amber-400">$55.000</span>
-                <a href="#inscripcion" class="rounded-lg bg-amber-600 px-4 py-2 text-sm font-semibold text-white shadow hover:bg-amber-700 focus:ring-4 focus:ring-amber-400/50 focus:outline-hidden">
-                Reservar
-                </a>
+            <div class="flex flex-col flex-grow p-6 space-y-3">
+            <span class="text-xs font-bold uppercase tracking-wider text-emerald-600 dark:text-emerald-400">Nivel Fácil</span>
+            <h3 class="text-xl font-bold">Luces del Centro</h3>
+            <p class="text-sm text-gray-600 dark:text-gray-400 flex-grow">Recorrido plano iluminado por los puntos históricos de la ciudad.</p>
+            <div class="pt-3 border-t border-gray-100 dark:border-gray-800 flex items-center justify-between">
+                <span class="text-lg font-bold text-amber-600 dark:text-amber-400">$55.000</span>
+                <button class="rounded-lg bg-amber-600 px-4 py-2 text-sm font-semibold text-white hover:bg-amber-700 transition-colors">Reservar</button>
             </div>
             </div>
         </article>
 
-        <!-- CARD 2: Miradores de la Ciudad -->
-        <article class="group relative flex flex-col overflow-hidden rounded-xl border border-gray-800 bg-gray-900 shadow-xl transition-all duration-300 hover:-translate-y-1 hover:border-amber-500/50 hover:shadow-amber-500/10">
-            <div class="h-48 w-full bg-gray-800 relative overflow-hidden flex items-center justify-center">
-            <span class="text-gray-500 text-sm">Imagen Miradores</span>
+        <!-- CARD 2 -->
+        <article class="flex flex-col overflow-hidden rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 shadow-sm hover:shadow-md transition-all">
+            <div class="h-44 w-full bg-amber-900/20 dark:bg-gray-800 flex items-center justify-center p-6">
+            <svg class="w-12 h-12 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 11l7-7 7 7M5 19l7-7 7 7"/></svg>
             </div>
-            <div class="flex flex-col flex-grow p-6 space-y-4">
-            <div class="flex justify-between items-center">
-                <span class="px-2.5 py-1 text-xs font-bold uppercase tracking-wider rounded-md bg-amber-500/10 text-amber-400 border border-amber-500/20">
-                Medio
-                </span>
-                <span class="text-sm font-medium text-gray-400">16 km · 3 h</span>
-            </div>
-            <h3 class="text-xl font-bold text-white group-hover:text-amber-400 transition-colors">Miradores de la Ciudad</h3>
-            <p class="text-sm text-gray-400 flex-grow">Ascenso moderado para disfrutar de la vista panorámica nocturna de Medellín.</p>
-            <div class="pt-4 border-t border-gray-800 flex items-center justify-between">
-                <span class="text-xl font-bold text-amber-400">$75.000</span>
-                <a href="#inscripcion" class="rounded-lg bg-amber-600 px-4 py-2 text-sm font-semibold text-white shadow hover:bg-amber-700 focus:ring-4 focus:ring-amber-400/50 focus:outline-hidden">
-                Reservar
-                </a>
+            <div class="flex flex-col flex-grow p-6 space-y-3">
+            <span class="text-xs font-bold uppercase tracking-wider text-amber-600 dark:text-amber-400">Nivel Intermedio</span>
+            <h3 class="text-xl font-bold">Miradores Urbanos</h3>
+            <p class="text-sm text-gray-600 dark:text-gray-400 flex-grow">Ascenso moderado para apreciar la vista panorámica nocturna.</p>
+            <div class="pt-3 border-t border-gray-100 dark:border-gray-800 flex items-center justify-between">
+                <span class="text-lg font-bold text-amber-600 dark:text-amber-400">$75.000</span>
+                <button class="rounded-lg bg-amber-600 px-4 py-2 text-sm font-semibold text-white hover:bg-amber-700 transition-colors">Reservar</button>
             </div>
             </div>
         </article>
 
-        <!-- CARD 3: Luna en Las Palmas -->
-        <article class="group relative flex flex-col overflow-hidden rounded-xl border border-gray-800 bg-gray-900 shadow-xl transition-all duration-300 hover:-translate-y-1 hover:border-amber-500/50 hover:shadow-amber-500/10">
-            <div class="h-48 w-full bg-gray-800 relative overflow-hidden flex items-center justify-center">
-            <span class="text-gray-500 text-sm">Imagen Las Palmas</span>
+        <!-- CARD 3 -->
+        <article class="flex flex-col overflow-hidden rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 shadow-sm hover:shadow-md transition-all">
+            <div class="h-44 w-full bg-amber-900/20 dark:bg-gray-800 flex items-center justify-center p-6">
+            <svg class="w-12 h-12 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707"/></svg>
             </div>
-            <div class="flex flex-col flex-grow p-6 space-y-4">
-            <div class="flex justify-between items-center">
-                <span class="px-2.5 py-1 text-xs font-bold uppercase tracking-wider rounded-md bg-rose-500/10 text-rose-400 border border-rose-500/20">
-                Difícil
-                </span>
-                <span class="text-sm font-medium text-gray-400">22 km · 3,5 h</span>
-            </div>
-            <h3 class="text-xl font-bold text-white group-hover:text-amber-400 transition-colors">Luna en Las Palmas</h3>
-            <p class="text-sm text-gray-400 flex-grow">Reto de altura con exigencia física avanzada y un descenso iluminado increíble.</p>
-            <div class="pt-4 border-t border-gray-800 flex items-center justify-between">
-                <span class="text-xl font-bold text-amber-400">$95.000</span>
-                <a href="#inscripcion" class="rounded-lg bg-amber-600 px-4 py-2 text-sm font-semibold text-white shadow hover:bg-amber-700 focus:ring-4 focus:ring-amber-400/50 focus:outline-hidden">
-                Reservar
-                </a>
+            <div class="flex flex-col flex-grow p-6 space-y-3">
+            <span class="text-xs font-bold uppercase tracking-wider text-rose-600 dark:text-rose-400">Nivel Avanzado</span>
+            <h3 class="text-xl font-bold">Las Palmas Night</h3>
+            <p class="text-sm text-gray-600 dark:text-gray-400 flex-grow">Exigencia física alta con clima frío y descenso iluminado.</p>
+            <div class="pt-3 border-t border-gray-100 dark:border-gray-800 flex items-center justify-between">
+                <span class="text-lg font-bold text-amber-600 dark:text-amber-400">$95.000</span>
+                <button class="rounded-lg bg-amber-600 px-4 py-2 text-sm font-semibold text-white hover:bg-amber-700 transition-colors">Reservar</button>
             </div>
             </div>
         </article>
