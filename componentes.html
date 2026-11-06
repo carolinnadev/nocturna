@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kit de Componentes · Rueda Nocturna</title>
+    <!-- Enlace al CSS generado por Tailwind CLI -->
+    <link href="./src/output.css" rel="stylesheet">
+    </head>
+    <body class="bg-gray-950 text-gray-100 min-h-screen font-sans antialiased p-6 sm:p-12">
+
+    <main class="max-w-4xl mx-auto space-y-12">
+        
+        <!-- Encabezado de la página -->
+        <header class="border-b border-gray-800 pb-6 space-y-2">
+        <span class="text-xs font-semibold tracking-wider text-amber-400 uppercase">Rueda Nocturna · Design System</span>
+        <h1 class="text-3xl font-extrabold text-white tracking-tight">Kit de Componentes v0.1</h1>
+        <p class="text-gray-400">Revisión general de elementos interactivos, cards, alertas y formularios diseñados con Tailwind CSS.</p>
+        </header>
+
+        <!-- SECCIÓN 1: BOTONES -->
+        <section class="space-y-4">
+        <h2 class="text-xl font-bold text-white border-l-4 border-amber-500 pl-3">1. Botones del Sistema</h2>
+        <div class="flex flex-wrap gap-4 items-center bg-gray-900 p-6 rounded-xl border border-gray-800">
+            <!-- Botón Principal -->
+            <button type="button" class="rounded-lg bg-amber-600 px-5 py-2.5 font-semibold text-white shadow-md hover:bg-amber-700 focus:ring-4 focus:ring-amber-400/50 focus:outline-hidden transition-all">
+            Botón Principal
+            </button>
+            <!-- Botón Secundario -->
+            <button type="button" class="rounded-lg bg-gray-800 px-5 py-2.5 font-semibold text-gray-200 border border-gray-700 hover:bg-gray-700 focus:ring-4 focus:ring-gray-600 focus:outline-hidden transition-all">
+            Botón Secundario
+            </button>
+            <!-- Botón Contorno -->
+            <button type="button" class="rounded-lg border-2 border-amber-600 px-5 py-2.5 font-semibold text-amber-400 hover:bg-amber-600/10 focus:ring-4 focus:ring-amber-400/50 focus:outline-hidden transition-all">
+            Botón Contorno
+            </button>
+        </div>
+        </section>
+
+        <!-- SECCIÓN 2: CARD -->
+        <section class="space-y-4">
+        <h2 class="text-xl font-bold text-white border-l-4 border-amber-500 pl-3">2. Componente Card</h2>
+        <div class="bg-gray-900 p-6 rounded-xl border border-gray-800 max-w-sm">
+            <article class="overflow-hidden rounded-xl border border-gray-800 bg-gray-950 shadow-lg">
+            <div class="h-40 w-full bg-gray-800 flex items-center justify-center text-gray-500 text-sm">
+                Imagen de Referencia
+            </div>
+            <div class="p-6 space-y-3">
+                <span class="text-xs font-bold uppercase tracking-wider text-amber-400">Ruta Destacada</span>
+                <h3 class="text-xl font-bold text-white">Luces del Centro</h3>
+                <p class="text-sm text-gray-400">Recorrido nocturno guiado por los puntos históricos de la ciudad con kit lumínico incluido.</p>
+                <p class="text-lg font-bold text-amber-400">$55.000</p>
+            </div>
+            </article>
+        </div>
+        </section>
+
+        <!-- SECCIÓN 3: ALERTAS -->
+        <section class="space-y-4">
+        <h2 class="text-xl font-bold text-white border-l-4 border-amber-500 pl-3">3. Alertas del Sistema</h2>
+        <div class="space-y-4 bg-gray-900 p-6 rounded-xl border border-gray-800">
+            
+            <!-- Alerta de Información -->
+            <div role="region" aria-label="Información" class="rounded-lg border-l-4 border-blue-500 bg-blue-950/40 p-4 text-blue-200 border border-blue-900/50">
+            <p class="font-semibold text-blue-300">Información importante</p>
+            <p class="text-sm text-blue-200/80">Las inscripciones cierran dos horas antes de cada salida programada.</p>
+            </div>
+
+            <!-- Alerta de Éxito -->
+            <div role="alert" class="rounded-lg border-l-4 border-emerald-500 bg-emerald-950/40 p-4 text-emerald-200 border border-emerald-900/50">
+            <p class="font-semibold text-emerald-300">¡Reserva confirmada!</p>
+            <p class="text-sm text-emerald-200/80">Te hemos enviado los detalles y el punto de encuentro a tu correo electrónico.</p>
+            </div>
+
+            <!-- Alerta de Advertencia -->
+            <div role="region" aria-label="Advertencia" class="rounded-lg border-l-4 border-amber-500 bg-amber-950/40 p-4 text-amber-200 border border-amber-900/50">
+            <p class="font-semibold text-amber-300">Condición climática</p>
+            <p class="text-sm text-amber-200/80">En caso de lluvia fuerte, el recorrido se aplazará para la siguiente fecha disponible.</p>
+            </div>
+
+        </div>
+        </section>
+
+        <!-- SECCIÓN 4: FORMULARIOS E INPUTS -->
+        <section class="space-y-4">
+        <h2 class="text-xl font-bold text-white border-l-4 border-amber-500 pl-3">4. Campos de Formulario (Inputs)</h2>
+        <div class="bg-gray-900 p-6 rounded-xl border border-gray-800 space-y-6 max-w-lg">
+            
+            <!-- Input Correo -->
+            <div class="space-y-1.5">
+            <label for="correo" class="block text-sm font-medium text-gray-300">Correo electrónico</label>
+            <input type="email" id="correo" placeholder="tu@correo.com"
+                class="w-full rounded-md border border-gray-700 bg-gray-950 px-3 py-2 text-white placeholder-gray-500 focus:border-amber-500 focus:ring-2 focus:ring-amber-400/50 focus:outline-hidden">
+            <p class="text-xs text-gray-500">Nunca compartiremos tu información personal.</p>
+            </div>
+
+            <!-- Input Celular -->
+            <div class="space-y-1.5">
+            <label for="celular" class="block text-sm font-medium text-gray-300">Número de celular</label>
+            <input type="tel" id="celular" placeholder="300 000 0000"
+                class="w-full rounded-md border border-gray-700 bg-gray-950 px-3 py-2 text-white placeholder-gray-500 focus:border-amber-500 focus:ring-2 focus:ring-amber-400/50 focus:outline-hidden">
+            <p class="text-xs text-gray-500">Recibirás un mensaje de confirmación vía WhatsApp.</p>
+            </div>
+
+        </div>
+        </section>
+
+    </main>
+
+    </body>
+</html>
