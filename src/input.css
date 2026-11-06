@@ -1,12 +1,24 @@
 @import "tailwindcss";
 
-/* Definición de variante personalizada para modo oscuro manual */
 @custom-variant dark (&:where(.dark, .dark *));
 
-/* Tema personalizado con la directiva @theme de Tailwind v4 */
 @theme {
   --color-nocturna-bg: #090d16;
   --color-nocturna-card: #111827;
-  --color-nocturna-brand: #f59e0b;
-  --color-nocturna-hover: #d97706;
-};
+  --color-nocturna-brand: #ffd166;
+  --color-nocturna-hover: #f4bf4f;
+  --color-nocturna-text: #e2e8f0;
+  --color-nocturna-muted: #94a3b8;
+}
+
+@layer components {
+  .btn-nocturna-primary {
+    @apply rounded-lg bg-amber-500 px-5 py-2.5 font-semibold text-gray-950 shadow-md hover:bg-amber-400 focus:ring-4 focus:ring-amber-500/40 focus:outline-hidden transition-all;
+  }
+  .btn-nocturna-secondary {
+    @apply rounded-lg border border-gray-700 bg-gray-800 px-5 py-2.5 font-semibold text-gray-200 hover:bg-gray-700 focus:ring-4 focus:ring-gray-600 focus:outline-hidden transition-all;
+  }
+  .card-nocturna {
+    @apply flex flex-col overflow-hidden rounded-xl border border-gray-800 bg-gray-900 shadow-xl transition-all duration-300 hover:-translate-y-1 hover:border-amber-500/50 hover:shadow-amber-500/10;
+  }
+}

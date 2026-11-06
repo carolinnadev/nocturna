@@ -14,3 +14,23 @@ Para garantizar la consistencia visual de la campaña **Rueda Nocturna** en todo
 * **Radios de borde:** Se utiliza una escala unificada de bordes redondeados (`rounded-lg` para componentes interactivos y contenedores pequeños, y `rounded-xl` para las cards principales).
 * **Escala de espaciado:** Se mantiene una estructura simétrica de rellenos y márgenes basada en la escala modular de Tailwind (múltiplos coherentes como `p-4`, `p-6`, `px-5 py-2.5`, etc.).
 * **Paleta de colores y estados:** Uso estricto de la gama cromática principal basada en tonos ámbar (`amber-800`, `amber-900`, `amber-700`, `amber-50`) combinados con grises neutros de soporte, asegurando estados interactivos consistentes mediante prefijos de eventos como `hover:` y anillos de enfoque visibles (`focus:ring-2`, `focus:ring-amber-300`, `focus:outline-hidden`) para cumplir con los estándares de accesibilidad con teclado.
+
+
+## 📊 Pruebas Responsive (MiniReto 6)
+| Ancho de Pantalla | Comportamiento del Layout | Estado |
+| :--- | :--- | :--- |
+| **360 px (Móvil)** | Menú colapsado, grillas a 1 columna, tarjetas y formularios adaptados verticalmente sin scroll horizontal. | ✅ Correcto |
+| **768 px (Tablet - sm/md)** | Encabezado en fila, sección de rutas pasa a 2 columnas (`sm:grid-cols-2`), pasos distribuidos. | ✅ Correcto |
+| **1024 px (Escritorio - lg)** | Grilla de rutas pasa a 3 columnas completas, alineación espaciada y optimizada. | ✅ Correcto |
+| **1280 px (Pantallas grandes)** | Contenedor limitado con `max-w-6xl` y centrado perfecto (`mx-auto`). | ✅ Correcto |
+
+---
+
+## ⚖️ Comparativa Técnica: Bootstrap vs. Tailwind CSS (MiniReto 8)
+
+* **Curva de aprendizaje:** Bootstrap ofrece componentes listos que facilitan prototipar rápido, pero exige sobreescribir estilos para personalizar. Tailwind exige conocer bien CSS y consultar clases de utilidad al inicio, pero otorga control total inmediato.
+* **Personalización:** En Bootstrap requiere variables Sass o reescritura de clases globales. En Tailwind se ajusta de forma limpia y modular mediante la directiva `@theme`.
+* **Tamaño final:** 
+  * *Bootstrap:* ~230 KB de CSS base.
+  * *Tailwind CSS (con `--minify`):* ~11 KB de CSS optimizado (solo incluye las clases utilizadas activamente en el HTML).
+* **Casos de uso recomendados para Rueda Nocturna:** Se recomienda **Tailwind CSS** porque la marca requiere una identidad visual propia con tonos oscuros y amarillos de alta visibilidad, evitando el aspecto genérico de los componentes predeterminados de Bootstrap.
